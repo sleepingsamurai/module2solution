@@ -1,0 +1,75 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: green;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+.vk, .msd, .abd{
+	height: 300px;
+	color: white;
+	position: relative;
+	border: 1px solid black;
+	background-color: grey;
+	margin:25px;
+}
+.vkdes,.msddes,.abddes{
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	left: 50px;
+	right: 50px;
+}
+.vkname,.msdname,.abdname{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding:10px; 
+	border: 1px solid black;
+}
+.vkname{
+	background-color: red;
+	color: black;
+}
+.msdname{
+	background-color: yellow;
+	color: black;
+}
+.abdname{
+	background-color: blue;
+	color: black;
+}
+/*************responsive**********/
+.row{
+	width:100%;
+	margin: 10px;
+}
+/******large devices*******/
+@media (min-width: 992px){
+	.col-ld-4{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/*********medium devices********/
+@media (max-width: 991px) and (min-width: 768px){
+	.col-md-6,.col-md-12{
+		float:left;
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+}
+/********small devices*******/
+@media (max-width: 767px){
+	.col-sd-12{
+		width: 100%;
+	}
+}
